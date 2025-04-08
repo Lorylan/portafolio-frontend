@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@import '@fontsource-variable/bricolage-grotesque';
+
+
+
+:root{
+    color-scheme: dark light;
+}
+
+html{
+    
+    background: radial-gradient( 80% 80% at 50% -35%,rgba(155,19,178,0.3),rgba(255,255,255,0));
+    font-family: 'Bricolage Grotesque Variable', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
