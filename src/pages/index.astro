@@ -1,15 +1,36 @@
 ---
 import Badge from '../components/Badge.astro';
+import GithubICon from '../components/icons/GitHubICon.astro';
+import LinkedinICon from '../components/icons/LinkedInIcon.astro';
 import Layout from '../layouts/Layout.astro';
-
+import SocialBadge from '../components/SocialBadge.astro'
+import MailIcon from '../components/icons/MailIcon.astro';
+import Experience from '../components/Experience.astro';
+import SectionContainer from '../components/SectionContainer.astro';
 ---
 
-<Layout title='Welcome to Astro'>
+<Layout title='Portafolio | Milagros Aylén Jacinto - Desarrolladora FrontEnd' description="Contrata a Milagros Aylen Jacinto para crear tu aplicación web o móvil.">
 	<main>
-        <section class="w-full lg:w-[840px] mx-auto py-44">
+        <SectionContainer class="py-44 pb-24">
             <h1 class="text-white text-4xl font-bold flex flex-row gap-x-2 pb-4">Hola 👋🏻 , soy Milagros Aylén Jacinto <a href="https://www.linkedin.com/in/milagros-jacinto" target="_blank" rel="noopener" class=" flex items-center"><Badge>Disponible para trabajar</Badge></a></h1>
             <h2 class="text-2xl opacity-80 text-wrap">+15 años de experiencia. Desarrollo Web y Creadora de contenido. De Buenos Aires, Argentina. Especializada en crear aplicaciones única.</h2>
-        </section>
-        
+            <nav class="flex gap-x-4 mt-8">
+                <SocialBadge href="https://www.linkedin.com/in/milagros-jacinto">
+                    <LinkedinICon class="size-6"/>LinkedIn
+                </SocialBadge>
+                <SocialBadge href="https://github.com/Lorylan/">
+                    <GithubICon class="size-6"/> GitHub
+                </SocialBadge>
+                <SocialBadge href="https://github.com/Lorylan/">
+                    <MailIcon class="size-6"/> mili.aylen.j@gmail.com
+                </SocialBadge>
+            </nav>
+        </SectionContainer>
+        <SectionContainer>
+            <h2 class="text-2xl text-white font-bold mt-8">Experiencia</h2>
+            
+            <Experience/>
+       
+        </SectionContainer>
     </main>
 </Layout>

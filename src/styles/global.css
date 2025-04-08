@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @import '@fontsource-variable/bricolage-grotesque';
 
-
+@custom-variant dark (&:where(.dark, .dark *));
 
 :root{
     color-scheme: dark light;
@@ -17,5 +17,5 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    
+  
 }
