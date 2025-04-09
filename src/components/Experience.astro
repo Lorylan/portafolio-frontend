@@ -3,28 +3,37 @@ import ExperienceItem from "./ExperienceItem.astro";
 
 const EXPERIENCE = [
     {
-        title: "Flowbite Library v1.0.0",
-        date: "December 2, 2021",
-        description: "Get started with dozens of web components and interactive elements.",
+        title: "Desarrolladora Full Stack",
+        subtitle: "Colegio de Escribanos de la Provincia de Buenos Aires",
+        date: "Enero 2024 - Actualmente",
+        description: "Responsable de desarrollo de aplicaciones web de alta calidad desde el diseño de la interfaz de usuario hasta la funcionalidad del servidor y base de datos.",
     },
     {
-        title: "Flowbite Library v1.2.0",
-        date: "December 23, 2021",
-        description: "Get started with dozens of web components and interactive elements.",
+        title: "Becaria investigadora",
+        subtitle: "Universidad Nacional de La Plata - LIFIA",
+        date: "Marzo 2023 - Marzo 2024",
+        description: "Diseñé y construí diversas redes neuronales artificiales especializadas en la clasificación de imágenes, con el objetivo de evaluar se desempeñó y comprender mejor cómo abordan sus tareas. Exploré diversas técnicas de extracción de reglas que permite explicar redes neuronales artificiales.",
     },
     {
-        title: "Flowbite Library v1.3.0",
-        date: "January 5, 2022",
-        description: "Get started with dozens of web components and interactive elements.",
+        title: "Desarrolladora de aplicaciones de escritorio",
+        subtitle: "Auxilios Aimaretti",
+        date: "Octubre 2020 - Diciembre 2020",
+        description: "Creacion de una aplicación de escritorio para la gestión de una empresa de grúa. Mi contribución incluyó la creación y diseño tanto de la base de datos como la interfaz",
+    },
+    {
+        title: "Desarrolladora de aplicaciones de escritorio",
+        subtitle: "Maxikiosco TODO en UNO",
+        date: "Diciembre 2020 - Diciembre 2020",
+        description: "Aplicación de escritorio la cual consiste en la administración del inventario de un maxikiosco. Colaboré estrechamente con otro desarrollador para llevar a cabo tanto la implementación de la interfaz como la creación de base de datos, demostrando habilidades colaborativas.",
     },
 ];
 ---
 
 
-<ol class="items-center sm:flex">
+<ol class="relative border-s border-gray-200 dark:border-gray-700">    
     {
     EXPERIENCE.map(experience => (
-    <li class="relative mb-6 sm:mb-0">
+    <li class="mb-10 ms-6 ">
      <ExperienceItem { ... experience} />
     </li>
     ))
